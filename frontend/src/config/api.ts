@@ -1,7 +1,6 @@
-// API Configuration
 export const API_BASE_URL =
   import.meta.env.VITE_API_URL ||
-  'https://s26yt7k27l.execute-api.us-east-1.amazonaws.com/prod';
+  'https://wlcg1ndgf6.execute-api.ap-south-1.amazonaws.com/dev';
 
 export const API_ENDPOINTS = {
   // Health

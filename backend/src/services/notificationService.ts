@@ -142,11 +142,11 @@ const sendUserEmailViaSES = async (
       userEmail: notification.userEmail,
     });
   } catch (error) {
-    logger.error('Failed to send user email via SES', error as Error, {
+    logger.warn('Failed to send user email via SES (e.g. SES Sandbox unverified email)', {
+      error: (error as Error).message,
       orderId: notification.orderId,
       userEmail: notification.userEmail,
     });
-    throw error; // Re-throw to trigger retry
   }
 };
 

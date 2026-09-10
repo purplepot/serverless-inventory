@@ -7,19 +7,19 @@ A production-grade, full-stack serverless inventory management system built on A
 ![AWS](https://img.shields.io/badge/AWS-Serverless-orange?logo=amazon-aws)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-black?logo=github-actions)
 
-## 🌐 [Live Demo](https://d3g8yrgnuos3zh.cloudfront.net)
+## 🌐 [Live Demo](https://d1biz75h3eia9y.cloudfront.net)
 
 | Resource | URL |
 |----------|-----|
-| **Frontend** | [https://d3g8yrgnuos3zh.cloudfront.net](https://d3g8yrgnuos3zh.cloudfront.net) |
-| **API Base URL** | [https://s26yt7k27l.execute-api.us-east-1.amazonaws.com/prod](https://s26yt7k27l.execute-api.us-east-1.amazonaws.com/prod) |
-| **API Documentation** | [https://s26yt7k27l.execute-api.us-east-1.amazonaws.com/prod/docs](https://s26yt7k27l.execute-api.us-east-1.amazonaws.com/prod/docs) |
+| **Frontend** | [https://d1biz75h3eia9y.cloudfront.net](https://d1biz75h3eia9y.cloudfront.net) |
+| **API Base URL** | [https://wlcg1ndgf6.execute-api.ap-south-1.amazonaws.com/dev](https://wlcg1ndgf6.execute-api.ap-south-1.amazonaws.com/dev) |
+| **API Documentation** | [https://wlcg1ndgf6.execute-api.ap-south-1.amazonaws.com/dev/docs](https://wlcg1ndgf6.execute-api.ap-south-1.amazonaws.com/dev/docs) |
 
 ![alt text](images/home.png)
 
 ![alt text](images/architecture-aws.png)
 
-## [Video Walkthrough](https://www.loom.com/share/823b20b6ea7c4872b9091f554a6a34fe)
+## [Video Walkthrough](#)
 
 ## [CI/CD Pipeline Image](#-cicd-pipeline)
 
@@ -58,8 +58,8 @@ This workshop was designed to take participants from zero serverless knowledge t
 | 4 | **Lambda CRUD Functions** | ✅ Complete | 13 Lambda functions |
 | 5 | **CI/CD Multi-Stage Deployment** | ✅ Complete | GitHub Actions with stage logic (see [CI/CD Pipeline](#-cicd-pipeline)) |
 | 6 | **Fully Working & Documented** | ✅ Complete | This README + Technical Documentation + Swagger API Docs |
-| 7 | **Public GitHub Repository** | ✅ Complete | [Repository Link](https://github.com/madhur-banger/serverless-inventory-management) |
-| 8 | **Loom Video Walkthrough** | 📹 Complete | [Video Walkthrough](https://www.loom.com/share/823b20b6ea7c4872b9091f554a6a34fe) |
+| 7 | **Public GitHub Repository** | ✅ Complete | [Repository Link](https://github.com/purplepot/serverless-inventory) |
+| 8 | **Loom Video Walkthrough** | 📹 Complete | [Video Walkthrough](#) |
 
 ### Optional Enhancements (All Implemented!)
 
@@ -262,8 +262,8 @@ This architecture was walked through step-by-step during the seminar, explaining
 
 ```bash
 # Clone repository
-git clone https://github.com/madhur-banger/serverless-inventory-management
-cd serverless-inventory-system
+git clone https://github.com/purplepot/serverless-inventory.git
+cd serverless-inventory
 
 # Install backend dependencies
 cd backend
@@ -454,9 +454,9 @@ npm run test:integration
 
 ---
 
-## 📹 [Seminar Recording / Video Walkthrough](https://www.loom.com/share/823b20b6ea7c4872b9091f554a6a34fe)
+## 📹 Seminar Recording / Video Walkthrough
 
-[Video Link](https://www.loom.com/share/823b20b6ea7c4872b9091f554a6a34fe)
+Video demonstration of the architecture and live deployment.
 
 **Video Contents:**
 1. Architecture overview
@@ -487,18 +487,17 @@ For low-medium traffic (~10,000 requests/month):
 ## 📚 Documentation
 
 - [Technical Documentation](docs/technical-documentation.md)
-- [API Documentation (Swagger)](https://s26yt7k27l.execute-api.us-east-1.amazonaws.com/prod/docs)
-- [OpenAPI Spec](https://s26yt7k27l.execute-api.us-east-1.amazonaws.com/prod/docs/spec)
+- [API Documentation (Swagger)](https://wlcg1ndgf6.execute-api.ap-south-1.amazonaws.com/dev/docs)
+- [OpenAPI Spec](https://wlcg1ndgf6.execute-api.ap-south-1.amazonaws.com/dev/docs/spec)
 
 ---
 
 ## 👤 Author
 
-**Madhur**
+**Priyansh**
 
-- AWS Community Builder (Serverless)
-- AWS Solutions Architect Associate
-- Conducted serverless workshops and seminars at colleges and developer communities
+- Email: priyansh.software@gmail.com
+- Full-Stack Serverless Developer
 
 ---
 

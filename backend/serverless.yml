@@ -17,7 +17,7 @@ provider:
   name: aws
   runtime: nodejs20.x
   stage: ${opt:stage, 'dev'}
-  region: us-east-1
+  region: ap-south-1
   
   
   # API Gateway configuration
@@ -80,12 +80,12 @@ custom:
   # Email Configuration
   # UPDATE: Replace with your verified SES email/domain
   sesFromEmail:
-    dev: 'madhur.cloudevops@gmail.com'
-    prod: 'madhur.cloudevops@gmail.com'  # Must be verified in SES
+    dev: 'priyansh.software@gmail.com'
+    prod: 'priyansh.software@gmail.com'  # Must be verified in SES
   
   adminEmail:
-    dev: 'madhur.cloudevops@gmail.com'
-    prod: 'madhur.cloudevops@gmail.com'
+    dev: 'priyansh.software@gmail.com'
+    prod: 'priyansh.software@gmail.com'
   
   # esbuild configuration
   esbuild:

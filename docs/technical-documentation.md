@@ -1,10 +1,10 @@
 # Serverless Inventory Management System
 ## Technical Documentation
 
-**Author:** Madhur  
+**Author:** Priyansh  
 **Deployment:** Production  
 **Version:** 1.0.0  
-**Date:** February 2026
+**Date:** March 2026  
 
 ---
 
@@ -13,9 +13,9 @@
 A production-grade, full-stack serverless inventory management system built on AWS, demonstrating enterprise-level architecture, event-driven design, and modern DevOps practices. The system handles product inventory, order processing, and automated notifications with real-time stock management and asynchronous order fulfillment.
 
 **Live Deployment:**
-- **Frontend:** https://d3g8yrgnuos3zh.cloudfront.net
-- **API Base URL:** https://s26yt7k27l.execute-api.us-east-1.amazonaws.com/prod
-- **API Documentation:** https://s26yt7k27l.execute-api.us-east-1.amazonaws.com/prod/docs
+- **Frontend:** https://d1biz75h3eia9y.cloudfront.net
+- **API Base URL:** https://wlcg1ndgf6.execute-api.ap-south-1.amazonaws.com/dev
+- **API Documentation:** https://wlcg1ndgf6.execute-api.ap-south-1.amazonaws.com/dev/docs
 
 ---
 
@@ -332,7 +332,7 @@ On Processing Failure:
 │                                                                          │
 │  Content Delivery:                                                       │
 │  ├─ Amazon CloudFront                                                    │
-│  │  ├─ Distribution: d3g8yrgnuos3zh.cloudfront.net                      │
+│  │  ├─ Distribution: d1biz75h3eia9y.cloudfront.net                      │
 │  │  ├─ Origin: S3 bucket                                                │
 │  │  ├─ SSL Certificate: Default CloudFront                              │
 │  │  ├─ Price Class: All Edge Locations                                  │
@@ -536,7 +536,7 @@ GlobalSecondaryIndexes:
 
 ### Base URL
 ```
-Production: https://s26yt7k27l.execute-api.us-east-1.amazonaws.com/prod
+Production: https://wlcg1ndgf6.execute-api.ap-south-1.amazonaws.com/dev
 ```
 
 ### Authentication
@@ -1422,10 +1422,10 @@ serverless deploy
 
 ```bash
 # 1. Check health endpoint
-curl https://s26yt7k27l.execute-api.us-east-1.amazonaws.com/prod/health
+curl https://wlcg1ndgf6.execute-api.ap-south-1.amazonaws.com/dev/health
 
 # 2. Verify CloudFront distribution
-curl https://d3g8yrgnuos3zh.cloudfront.net
+curl https://d1biz75h3eia9y.cloudfront.net
 
 # 3. Check CloudWatch logs
 aws logs tail /aws/lambda/inventory-api-prod-createProduct --follow
@@ -1691,7 +1691,7 @@ describe('Order Processing Workflow', () => {
 #!/bin/bash
 # Full API test suite
 
-API_URL="https://s26yt7k27l.execute-api.us-east-1.amazonaws.com/prod"
+API_URL="https://wlcg1ndgf6.execute-api.ap-south-1.amazonaws.com/dev"
 AUTH_TOKEN="<your-jwt-token>"
 
 # 1. Health check
@@ -2284,7 +2284,7 @@ export const handler = async (event: SQSEvent) => {
 **Symptom:**
 ```
 Access to XMLHttpRequest at 'https://...amazonaws.com/prod/products' 
-from origin 'https://d3g8yrgnuos3zh.cloudfront.net' has been blocked by CORS policy
+from origin 'https://d1biz75h3eia9y.cloudfront.net' has been blocked by CORS policy
 ```
 
 **Solution:**
@@ -2297,7 +2297,7 @@ from origin 'https://d3g8yrgnuos3zh.cloudfront.net' has been blocked by CORS pol
 # serverless.yml
 provider:
   environment:
-    CORS_ORIGIN: https://d3g8yrgnuos3zh.cloudfront.net
+    CORS_ORIGIN: https://d1biz75h3eia9y.cloudfront.net
 ```
 
 ---
@@ -2499,6 +2499,6 @@ This project is private and confidential.
 ---
 
 **Document Version:** 1.0.0  
-**Last Updated:** February 2026  
-**Author:** Madhur  
+**Last Updated:** March 2026  
+**Author:** Priyansh  
 **Status:** Production Deployed ✅

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { API_BASE_URL } from '@/config/api';
 import {
   Package,
   ExternalLink,
@@ -158,7 +159,7 @@ export default function Landing() {
 
           <div className="flex items-center gap-2 sm:gap-3">
             <a
-              href="https://s26yt7k27l.execute-api.us-east-1.amazonaws.com/prod/docs"
+              href={`${API_BASE_URL}/docs`}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:block"
@@ -211,7 +212,7 @@ export default function Landing() {
               </Link>
 
               <a
-                href="https://s26yt7k27l.execute-api.us-east-1.amazonaws.com/prod/docs"
+                href={`${API_BASE_URL}/docs`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto"
@@ -411,7 +412,7 @@ export default function Landing() {
             </Link>
 
             <a
-              href="https://s26yt7k27l.execute-api.us-east-1.amazonaws.com/prod/docs"
+              href={`${API_BASE_URL}/docs`}
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -29,7 +29,7 @@
         "sns",
         "cognito"
     ],
-    "author": "Madhur",
+    "author": "Priyansh",
     "license": "MIT",
     "dependencies": {
         "@aws-sdk/client-dynamodb": "^3.490.0",

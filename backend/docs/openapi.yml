@@ -23,8 +23,8 @@ info:
     Get your token by signing in via AWS Cognito.
   version: 1.0.0
   contact:
-    name: Madhur
-    email: madhur.cloudevops@gmail.com
+    name: Priyansh
+    email: priyansh.software@gmail.com
 
 
 servers:
