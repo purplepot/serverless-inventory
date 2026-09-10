@@ -496,7 +496,9 @@ For low-medium traffic (~10,000 requests/month):
 
 **Priyansh**
 
-- Email: priyansh.software@gmail.com
+- **GitHub:** [@purplepot](https://github.com/purplepot)
+- **Email:** priyansh.software@gmail.com
+- **Project Repository:** [serverless-inventory](https://github.com/purplepot/serverless-inventory)
 - Full-Stack Serverless Developer
 
 ---
